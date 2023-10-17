@@ -1,0 +1,47 @@
+
+
+/* wallpaper */
+
+*{
+    margin: 30px 81px;
+    padding: 58px;
+}
+.img-wrapper{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.paper1{
+    display: inline-block;
+}
+body{
+    background-color: black;
+}
+.paper1{
+    display: inline-block;
+    
+}
+.paper1::before{
+    content: "";
+    position:absolute;
+    inset:-80px;
+    background-image: conic-gradient(#29d3d3 30deg, transparent 120deg);
+    animation: rotate 2s linear infinite;
+}
+.paper1::after{
+    content: "";
+    position: absolute;
+    inset: 5px;
+    background-image: url(wallpaper.jpg);
+    background-size:cover;
+    background-position: center;
+    border-radius: 15px;
+}
+@keyframes rotate {
+    to{
+        transform: rotate(-360deg);
+    }
+    
+}
