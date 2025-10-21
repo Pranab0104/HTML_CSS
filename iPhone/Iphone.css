@@ -545,9 +545,11 @@ i:hover {
   margin: 5px 0;
 }
 
+/* section6 starts from here */
+
 .section6{
   width: 100%;
-  height: 40%;
+  height: 35%;
   background-color: #000;
   color: #bbb;
   text-align: center;
@@ -570,4 +572,43 @@ i:hover {
   position: relative;
   font-size: 3vh;
   font-family: iphone;
+}
+
+/* section7 starts from here */
+
+.section7{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+  text-align: center;
+}
+
+.section7 .dabba{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.section7 .dabba h3{
+  font-size: 2.5vh;
+  font-family: iphone;
+  color: #aea9a9;
+}
+
+.section7 .dabba h3 span{
+  font-size: 2.7vh;
+  font-family: iphone;
+  color: #ffffff;
+}
+
+.section7 .dabba video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
