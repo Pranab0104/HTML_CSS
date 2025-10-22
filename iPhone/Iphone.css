@@ -549,66 +549,105 @@ i:hover {
 
 .section6{
   width: 100%;
-  height: 35%;
   background-color: #000;
-  color: #bbb;
+  color: #8d8b8b;
   text-align: center;
   display: flex;
   padding: 6%;
-  position: absolute;
+  position: relative;
   align-items: center;
   justify-content: center;
 }
 
 .section6 .box{
   position: relative;
-  height: 100%;
+  height: 100vh;
   width: 72%;
   align-items: center;
   justify-content: center;
 }
 
 .section6 .box p{
+  margin-top: 8vh;
   position: relative;
-  font-size: 3vh;
+  font-size: 2.9vh;
   font-family: iphone;
+}
+
+.section6 .box p span{
+  position: relative;
+  font-size: 2.9vh;
+  font-family: iphone;
+  color: white;
+}
+
+.section6 .box .innerbox{
+  position: relative;
+  top: 0%;
+  left: 10%;
+  margin-top: 6%;
+  height: 60%;
+  width: 70%;
+  /* background-color: crimson; */
+  border-radius: 15px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.section6 .box .innerbox img{
+  /* background-color: crimson; */
+  position: relative;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
 }
 
 /* section7 starts from here */
-
-.section7{
-  height: 100%;
+.section7 {
+  position: relative;     /* stay in normal document flow */
+  height: 100vh;
   width: 100%;
+  overflow: hidden;
+  background-color: black; /* fallback color */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: crimson;
+}
+
+.section7 .dabba {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.section7 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* fills section fully */
+  z-index: 1;
+}
+
+.section7 h3 {
+  position: relative;
+  z-index: 2;
+  color: rgb(138, 133, 133);
   text-align: center;
-}
-
-.section7 .dabba{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.section7 .dabba h3{
-  font-size: 2.5vh;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 400;
   font-family: iphone;
-  color: #aea9a9;
 }
 
-.section7 .dabba h3 span{
-  font-size: 2.7vh;
+.section7 h3 span{
+  position: relative;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 400;
   font-family: iphone;
-  color: #ffffff;
-}
-
-.section7 .dabba video{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
